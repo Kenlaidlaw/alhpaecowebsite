@@ -1,0 +1,89 @@
+.primary-text {
+    color: #16115e;
+}
+
+.secondary-text {
+    color: #037007;
+}
+
+.btn {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cases img:hover {
+    opacity: .7;
+}
+
+.flex-grid .flex-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.section-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+}
+
+/* mobile media */
+
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 140px;
+        padding: 5px;
+        max-width: 762px;
+            }
+
+    .navbar a {
+        padding: 10px 3px;
+        margin: 5px 3px;
+        font-size: 1rem;
+    }
+
+    .landing {
+        padding-top: 150px;
+        height: 100%;
+    }
+    .flex-item {
+        flex-direction: column;
+    }
+
+    .flex-columns .column,
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+    .news.flex-reverse .flex-item {
+        flex-direction: column;
+    }
+
+    .contact-form .btn {
+        font-size: 1rem;
+    }
+}
